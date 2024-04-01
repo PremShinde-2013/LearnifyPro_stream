@@ -6,14 +6,14 @@ import { ThemeSwitch } from './theme-switch';
 
 const Navbar = () => {
   return (
-    <nav className="flex-between fixed z-50 w-full bg-dark-1 dark:bg-slate-400 px-6 py-4 lg:px-10">
+    <nav className="flex-between fixed z-50 w-full  px-6 py-4 lg:px-10">
       <Link href="/" className="flex items-center gap-1">
-        <p className="text-[26px] font-extrabold text-white max-sm:hidden">
+        <p className="text-[26px] font-extrabold  max-sm:hidden">
           LearnifyProStream
         </p>
       </Link>
-      <ThemeSwitch />
       <div className="flex-between gap-5">
+        <ThemeSwitch />
         <SignedIn>
           <UserButton afterSignOutUrl="/sign-in" />
         </SignedIn>
